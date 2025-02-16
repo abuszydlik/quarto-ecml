@@ -1,0 +1,19 @@
+title: Quarto-ecml
+author: pat-alt
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    common:
+      toc: false
+      filters:
+        - quarto-ecml.lua
+      number-sections: true
+    pdf:
+      include-in-header: header.tex
+      template-partials:
+        - partials/title.tex
+        - partials/doc-class.tex
+    html:
+      css: styles.css
+

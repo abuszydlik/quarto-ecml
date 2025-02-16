@@ -1,0 +1,45 @@
+---
+title: Recent Advances in Underwater Basket Weaving Under the Extreme Pressure of the Mariana Trench
+format:
+  quarto-ecml-pdf:
+    keep-tex: true  
+  quarto-ecml-html: default
+blind-review: false
+author:
+  - name: André Lauren Benjamin
+    affiliations:
+      - name: Fictional Southern University
+        address: Savannah GA 31404
+        country: USA
+        url: \{a.l.benjamin,a.a.patton\}\@fsu.fake
+        id: south
+    url: https://example.org/
+  - name: Calvin Cordozar Broadus Jr.
+    corresponding: true 
+    affiliations:
+      - name: Fictional West Coast University
+        address: Long Beach CA 90840
+        country: USA
+        url: ccb@fwcu.fake
+      - name: Secondary European Affiliation
+        address: Tiergartenstr. 17
+        city: Heidelberg
+        country: Germany
+        postal-code: 69121 
+        url: lncs@springer.com
+  - name: André Patton
+    orcid: 0000−1111−2222−3333 
+    affiliations:
+      - ref: south 
+author-running: Altmeyer et al.
+abstract: |
+  The abstract should briefly summarize the contents of the paper in 150--250 words.
+keywords: [template, demo]
+bibliography: bibliography.bib  
+---
+
+## Introduction {#sec-intro}
+
+*TODO* Create a template that demonstrates the appearance, formatting, layout, and functionality of your format. Learn more about journal formats at <https://quarto.org/docs/journals/>.
+
+
