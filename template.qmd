@@ -1,5 +1,6 @@
 ---
 title: Recent Advances in Underwater Basket Weaving Under the Extreme Pressure of the Mariana Trench
+title-running: Underwater Basket Weaving Under Extreme Pressure
 format:
   quarto-ecml-pdf:
     keep-tex: true  
@@ -58,7 +59,7 @@ Only two levels of headings should be numbered. Lower level headings remain unnu
 
 The contribution should contain no more than four levels of headings. @tbl-headings gives a summary of all heading levels.
 
-::: {#tbl-headings}
+::: {#tbl-headings tbl-pos='t'}
 ```{=latex}
 \begin{tabular}{lll}
 \toprule
@@ -101,6 +102,20 @@ Please try to avoid rasterized images for line-art diagrams and schemas. Wheneve
 ![A figure caption is always placed below the illustration.
 Please note that short captions are centered, while long ones are
 justified by the macro package automatically.](example-image-duck){#fig-duck width=100% fig-pos='t'}
+
+\begin{theorem}
+This is a sample theorem. The run-in heading is set in bold, while
+the following text appears in italics. Definitions, lemmas,
+propositions, and corollaries are styled the same way.
+\end{theorem}
+<!-- %
+% the environments 'definition', 'lemma', 'proposition', 'corollary',
+% 'remark', and 'example' are defined in the LLNCS documentclass as well.
+% -->
+\begin{proof}
+Proofs, examples, and remarks have the initial word in italics,
+while the following text appears in normal font.
+\end{proof}
 
 <!-- ::: {.theorem}
 This is a sample theorem. The run-in heading is set in bold, while the following text appears in italics. Definitions, lemmas, propositions, and corollaries are styled the same way.
