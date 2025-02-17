@@ -27,11 +27,11 @@ author:
         country: Germany
         postal-code: 69121 
         url: lncs@springer.com
-  - name: André Patton
-    orcid: 0000−1111−2222−3333 
+  - name: Antwan André Patton
+    orcid: '0000\textendash1111\textendash2222\textendash3333'
     affiliations:
       - ref: south 
-author-running: Altmeyer et al.
+author-running: A.L. Benjamin et al.
 abstract: |
   The abstract should briefly summarize the contents of the paper in 150--250 words.
 keywords: [First Keyword, Second Keyword, Another Keyword.]
