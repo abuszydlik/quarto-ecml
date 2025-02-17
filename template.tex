@@ -26,42 +26,9 @@
   \usepackage[]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
 \usepackage{xcolor}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
-% Make \paragraph and \subparagraph free-standing
-\makeatletter
-\ifx\paragraph\undefined\else
-  \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}{
-    \@ifstar
-      \xxxParagraphStar
-      \xxxParagraphNoStar
-  }
-  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
-  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-  \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}{
-    \@ifstar
-      \xxxSubParagraphStar
-      \xxxSubParagraphNoStar
-  }
-  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
-  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-\makeatother
+\setcounter{secnumdepth}{2}
 
 
 \providecommand{\tightlist}{%
@@ -138,6 +105,8 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 
+\usepackage[numbers, compress]{natbib}
+\bibliographystyle{splncs04}
 \usepackage{bookmark}
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -145,7 +114,7 @@
 \hypersetup{
   pdftitle={Recent Advances in Underwater Basket Weaving Under the Extreme Pressure of the Mariana Trench},
   pdfauthor={André Lauren Benjamin; Calvin Cordozar Broadus Jr.; André Patton},
-  pdfkeywords={template, demo},
+  pdfkeywords={First Keyword, Second Keyword, Another Keyword.},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -179,7 +148,7 @@ Affiliation, Tiergartenstr.
 The abstract should briefly summarize the contents of the paper in
 150--250 words.
 
-\keywords{template \and demo}
+\keywords{First Keyword \and Second Keyword \and Another Keyword.}
 
 \end{abstract}
 
@@ -187,10 +156,110 @@ The abstract should briefly summarize the contents of the paper in
 
 \section{Introduction}\label{sec-intro}
 
-\emph{TODO} Create a template that demonstrates the appearance,
-formatting, layout, and functionality of your format. Learn more about
-journal formats at \url{https://quarto.org/docs/journals/}.
+\subsection{Main Contributions}\label{main-contributions}
 
+Please note that the first paragraph of a section or subsection is not
+indented. The first paragraph that follows a table, figure, equation
+etc. does not need an indent, either.
+
+Subsequent paragraphs, however, are indented.
+
+\section{Related Work}\label{related-work}
+
+\subsection{Basket Weaving}\label{basket-weaving}
+
+\subsubsection{Underwater Basket
+Weaving}\label{underwater-basket-weaving}
+
+Only two levels of headings should be numbered. Lower level headings
+remain unnumbered; they are formatted as run-in headings.
+
+\paragraph{Underwater Basket Weaving Under Difficult
+Circumstances}\label{underwater-basket-weaving-under-difficult-circumstances}
+
+The contribution should contain no more than four levels of headings.
+Table~\ref{tbl-headings} gives a summary of all heading levels.
+
+\begin{table}
+
+\caption{\label{tbl-headings}Table captions should be placed above the
+tables.}
+
+\centering{
+
+\begin{tabular}{lll}
+\toprule
+Heading level &  Example & Font size and style\\
+\midrule
+Title (centered) &  {\Large\bfseries Lecture Notes} & 14 point, bold\\
+1st-level heading &  {\large\bfseries 1 Introduction} & 12 point, bold\\
+2nd-level heading & {\bfseries 2.1 Printing Area} & 10 point, bold\\
+3rd-level heading & {\bfseries Run-in Heading in Bold.} Text follows & 10 point, bold\\
+4th-level heading & {\itshape Lowest Level Heading.} Text follows & 10 point, italic\\
+\bottomrule
+\end{tabular}
+
+}
+
+\end{table}%
+
+\section{Recent Advances from the Mariana
+Trench}\label{recent-advances-from-the-mariana-trench}
+
+Displayed equations are centered and set on a separate line.
+
+\[
+x + y = z
+\]
+
+Please try to avoid rasterized images for line-art diagrams and schemas.
+Whenever possible, use vector graphics instead
+
+For citations of references, we prefer the use of square brackets and
+consecutive numbers. Citations using labels or the author/year
+convention are also acceptable. The following bibliography provides a
+sample reference list with entries for journal articles
+\citep{ref_article1}, an LNCS chapter \citep{ref_lncs1}, a book
+\citep{ref_book1}, proceedings without editors \citep{ref_proc1}, and a
+homepage \citep{ref_url1}. Multiple citations are grouped
+\citep{ref_article1, ref_lncs1, ref_book1},
+\citep{ref_article1, ref_book1, ref_proc1, ref_url1}.
+
+\section{Experiments}\label{experiments}
+
+\subsection{Experimental Setup}\label{experimental-setup}
+
+\subsection{Experimental Results}\label{experimental-results}
+
+\section{Discussion}\label{discussion}
+
+\section{Conclusion}\label{conclusion}
+
+Of course, authors have complete freedom on how they choose to structure
+their paper. Section headers from Introduction up to and including
+Conclusions are completely up to the discretion of the authors; use
+whichever structure you see fit. Title, Abstract, the credits
+environment, and References, however, are mandatory.
+
+\begin{credits}
+\subsubsection{\ackname} A bold run-in heading in small font size at the end of the paper is
+used for general acknowledgments, for example: This study was funded
+by X (grant number Y).
+
+\subsubsection{\discintname}
+It is now necessary to declare any competing interests or to specifically
+state that the authors have no competing interests. Please place the
+statement with a bold run-in heading in small font size beneath the
+(optional) acknowledgments,
+for example: The authors have no competing interests to declare that are
+relevant to the content of this article. Or: Author A has received research
+grants from Company W. Author B has received a speaker honorarium from
+Company X and owns stock in Company Y. Author C is a member of committee Z.
+\end{credits}
+
+
+\renewcommand\refname{References}
+  \bibliography{bibliography.bib}
 
 
 
