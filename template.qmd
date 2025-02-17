@@ -156,4 +156,7 @@ grants from Company W. Author B has received a speaker honorarium from
 Company X and owns stock in Company Y. Author C is a member of committee Z.
 \end{credits}
 
-## References
+## References {-}
+
+::: {#refs}
+:::
