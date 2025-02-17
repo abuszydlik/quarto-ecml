@@ -82,9 +82,9 @@
   \newcommand\listtablename{List of Tables}
 \fi
 \ifdefined\figurename
-  \renewcommand*\figurename{Figure}
+  \renewcommand*\figurename{Fig.}
 \else
-  \newcommand\figurename{Figure}
+  \newcommand\figurename{Fig.}
 \fi
 \ifdefined\tablename
   \renewcommand*\tablename{Table}
@@ -97,6 +97,13 @@
 \@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
 \floatname{codelisting}{Listing}
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\usepackage{amsthm}
+\theoremstyle{remark}
+\AtBeginDocument{\renewcommand*{\proofname}{Proof}}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\newtheorem{refremark}{Remark}[section]
+\newtheorem{refsolution}{Solution}[section]
 \makeatother
 \makeatletter
 \makeatother
@@ -208,12 +215,36 @@ Trench}\label{recent-advances-from-the-mariana-trench}
 
 Displayed equations are centered and set on a separate line.
 
-\[
+\begin{equation}\phantomsection\label{eq-linear}{
 x + y = z
-\]
+}\end{equation}
 
 Please try to avoid rasterized images for line-art diagrams and schemas.
-Whenever possible, use vector graphics instead
+Whenever possible, use vector graphics instead (see
+Fig.~\ref{fig-duck}).
+
+\begin{figure}[t]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{example-image-duck.pdf}
+
+}
+
+\caption{\label{fig-duck}A figure caption is always placed below the
+illustration. Please note that short captions are centered, while long
+ones are justified by the macro package automatically.}
+
+\end{figure}%
+
+This is a sample theorem. The run-in heading is set in bold, while the
+following text appears in italics. Definitions, lemmas, propositions,
+and corollaries are styled the same way.
+
+\begin{proof}
+Proofs, examples, and remarks have the initial word in italics, while
+the following text appears in normal font.
+\end{proof}
 
 For citations of references, we prefer the use of square brackets and
 consecutive numbers. Citations using labels or the author/year
