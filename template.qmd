@@ -102,13 +102,13 @@ Please try to avoid rasterized images for line-art diagrams and schemas. Wheneve
 Please note that short captions are centered, while long ones are
 justified by the macro package automatically.](example-image-duck){#fig-duck width=100% fig-pos='t'}
 
-::: {.theorem}
+<!-- ::: {.theorem}
 This is a sample theorem. The run-in heading is set in bold, while the following text appears in italics. Definitions, lemmas, propositions, and corollaries are styled the same way.
 :::
 
 ::: {.proof}
 Proofs, examples, and remarks have the initial word in italics, while the following text appears in normal font.
-:::
+::: -->
 
 For citations of references, we prefer the use of square brackets and consecutive numbers. Citations using labels or the author/year
 convention are also acceptable. The following bibliography provides a sample reference list with entries for journal articles [@ref_article1], an LNCS chapter [@ref_lncs1], a book [@ref_book1], proceedings without editors [@ref_proc1], and a homepage [@ref_url1]. Multiple citations are grouped [@ref_article1;@ref_lncs1;@ref_book1], [@ref_article1;@ref_book1;@ref_proc1;@ref_url1].
