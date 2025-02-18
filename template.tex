@@ -96,6 +96,8 @@
 \usepackage{booktabs}
 \usepackage[misc]{ifsym}
 \newcommand{\corr}{(\Letter)}
+
+\renewcommand{\CSLLeftMargin}[1]{\hspace{0em}#1}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -320,28 +322,28 @@ Company X and owns stock in Company Y. Author C is a member of committee Z.
 \begin{CSLReferences}{0}{0}
 \bibitem[\citeproctext]{ref-ref_article1}
 \CSLLeftMargin{1. }%
-\CSLRightInline{Author, F.: Article title. Journal. 2, 99--110 (2016).}
+\CSLRightInline{Author, F.: Article title. Journal. \textbf{2}(5)
+99--110 (2016)}
 
 \bibitem[\citeproctext]{ref-ref_lncs1}
 \CSLLeftMargin{2. }%
 \CSLRightInline{Author, F., Author, S.: Title of a proceedings paper.
 In: Editor, F. and Editor, S. (eds.) CONFERENCE 2016. pp. 1--13.
-Springer, Heidelberg (2016).
-https://doi.org/\href{https://doi.org/10.10007/1234567890}{10.10007/1234567890}.}
+Springer, Heidelberg (2016). \url{https://doi.org/10.10007/1234567890}}
 
 \bibitem[\citeproctext]{ref-ref_book1}
 \CSLLeftMargin{3. }%
 \CSLRightInline{Author, F., Author, S., Author, T.: Book title.
-Publisher, Location (1999).}
+Publisher, Location (1999)}
 
 \bibitem[\citeproctext]{ref-ref_proc1}
 \CSLLeftMargin{4. }%
 \CSLRightInline{Author, A.-B.: Contribution title. In: 9th international
-proceedings on proceedings. pp. 1--2. Publisher, Location (2010).}
+proceedings on proceedings. pp. 1--2. Publisher, Location (2010)}
 
 \bibitem[\citeproctext]{ref-ref_url1}
 \CSLLeftMargin{5. }%
-\CSLRightInline{Springer: LNCS homepage.}
+\CSLRightInline{Springer: LNCS homepage}
 
 \end{CSLReferences}
 

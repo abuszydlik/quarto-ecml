@@ -69,7 +69,7 @@
     </layout>
   </citation>
   <bibliography entry-spacing="0" second-field-align="flush">
-    <layout suffix=".">
+    <layout>
       <text variable="citation-number" suffix="."/>
       <text macro="author" suffix=": "/>
       <choose>
@@ -86,7 +86,10 @@
           <group delimiter=" ">
             <text macro="title" suffix="."/>
             <text variable="container-title" form="short" suffix="."/>
-            <text variable="volume" suffix=","/>
+            <group delimiter="">
+              <text variable="volume" font-weight="bold"/>
+              <text variable="issue" prefix="(" suffix=")"/>
+            </group>
             <text variable="page"/>
             <date variable="issued">
               <date-part name="year" prefix="(" suffix=")"/>
@@ -155,7 +158,10 @@
           </group>
         </else>
       </choose>
-      <text variable="DOI" prefix=". https://doi.org/"/>
+      <group delimiter="">
+        <text value=". "/>
+        <text variable="DOI" prefix="https://doi.org/" link="https://doi.org/"/>
+      </group>
     </layout>
   </bibliography>
 </style>
