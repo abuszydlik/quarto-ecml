@@ -36,7 +36,7 @@ author-running: A.L. Benjamin et al.
 abstract: |
   The abstract should briefly summarize the contents of the paper in 150--250 words.
 keywords: [First Keyword, Second Keyword, Another Keyword.]
-bibliography: bibliography.bib  
+bibliography: bibliography.bib
 ---
 
 ## Introduction {#sec-intro}
@@ -157,6 +157,3 @@ Company X and owns stock in Company Y. Author C is a member of committee Z.
 \end{credits}
 
 ## References {-}
-
-::: {#refs}
-:::
