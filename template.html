@@ -232,7 +232,8 @@ Fig.&nbsp;1: A figure caption is always placed below the illustration. Please no
 % the environments 'definition', 'lemma', 'proposition', 'corollary',
 % 'remark', and 'example' are defined in the LLNCS documentclass as well.
 % -->
-<!-- ::: {.theorem}
+<!-- Using Quarto theorem environments does not work, see here: https://github.com/pat-alt/quarto-ecml/issues/1 -->
+<!-- ::: {#thm-sample}
 This is a sample theorem. The run-in heading is set in bold, while the following text appears in italics. Definitions, lemmas, propositions, and corollaries are styled the same way.
 :::
 
@@ -258,8 +259,11 @@ Proofs, examples, and remarks have the initial word in italics, while the follow
 <p>Of course, authors have complete freedom on how they choose to structure their paper. Section headers from Introduction up to and including Conclusions are completely up to the discretion of the authors; use whichever structure you see fit. Title, Abstract, the credits environment, and References, however, are mandatory.</p>
 </section>
 <section id="references" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-ref_proc1" class="csl-entry" role="listitem">
 Author, A.-B. 2010. <span>“Contribution Title.”</span> In <em>9th International Proceedings on Proceedings</em>, 1–2. Location: Publisher.
 </div>
@@ -275,10 +279,7 @@ Author, F., S. Author, and T. Author. 1999. <em>Book Title</em>. 2nd ed. Locatio
 <div id="ref-ref_url1" class="csl-entry" role="listitem">
 Springer. n.d. <span>“LNCS Homepage.”</span> <a href="http://www.springer.com/lncs" class="uri">http://www.springer.com/lncs</a>.
 </div>
-</div>
-</section>
-
-</main>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

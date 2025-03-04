@@ -99,7 +99,6 @@
 
 \renewcommand{\CSLLeftMargin}[1]{\hspace{0em}#1}
 \makeatletter
-
 \AtBeginDocument{%
 \ifdefined\contentsname
   \renewcommand*\contentsname{Table of contents}
@@ -136,8 +135,6 @@
 \makeatletter
 \makeatother
 \makeatletter
-
-
 \makeatother
 
 \usepackage{bookmark}
@@ -318,7 +315,8 @@ Company X and owns stock in Company Y. Author C is a member of committee Z.
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
 
-\phantomsection\label{refs}
+\begin{footnotesize}
+
 \begin{CSLReferences}{0}{0}
 \bibitem[\citeproctext]{ref-ref_article1}
 \CSLLeftMargin{1. }%
