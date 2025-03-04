@@ -14,6 +14,7 @@ contributes:
       toc: false
       number-sections: true
       number-depth: 2
+      linkcolor: black
       crossref:
         fig-title: Fig.
         fig-prefix: Fig.
@@ -25,8 +26,6 @@ contributes:
         - partials/before-body.tex
       indent: true
       block-headings: false
-      # biblio-style: splncs04
-      # citeproc: false
       csl: slncs.csl
     html:
       css: styles.css

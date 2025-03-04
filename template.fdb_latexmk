@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741081585.75434 "template.tex" "template.pdf" "template" 1741081586.80131 0
+["pdflatex"] 1741089592.04687 "template.tex" "template.pdf" "template" 1741089592.82618 0
   "/Users/paltmeyer/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/ifsym/ifsym10.600pk" 1737639003.76491 6828 e02ca64d10e4f50070ddfb7850068bd9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -145,8 +145,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1738080214 5466570 e8651e7fa7bb054fee9a07d3f37faf28 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1738080443 3352286 581e9a7f399deab4f6424d343bb4191b ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "template.aux" 1741081586.63529 5473 64959f2a8b85421fb9ca32223cf7f381 "pdflatex"
-  "template.tex" 1741081584.5679 11305 49040badc240cc6503ad604dc019f59f ""
+  "template.aux" 1741089592.70972 5473 64959f2a8b85421fb9ca32223cf7f381 "pdflatex"
+  "template.tex" 1741089591.10471 11306 a2d0deecb6820bf951b7c5e925202ba7 ""
   (generated)
   "template.aux"
   "template.log"
