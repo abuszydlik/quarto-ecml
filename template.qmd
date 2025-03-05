@@ -29,7 +29,7 @@ author:
         postal-code: 69121 
         url: lncs@springer.com
   - name: Antwan André Patton
-    orcid: '0000\textendash1111\textendash2222\textendash3333'
+    orcid: '0000-1111-2222-3333'
     affiliations:
       - ref: south 
 author-running: A.L. Benjamin et al.
