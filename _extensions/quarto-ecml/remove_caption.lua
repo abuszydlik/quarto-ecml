@@ -61,7 +61,7 @@ for _, file_path in ipairs(output_files) do
       print("Successfully updated " .. tex_file)
       
       -- Recompile the PDF
-      os.execute("pdflatex -interaction=nonstopmode " .. tex_file)
+      os.execute("latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf " .. tex_file)
       print("Recompiled PDF: " .. file_path)
       
       processed = true

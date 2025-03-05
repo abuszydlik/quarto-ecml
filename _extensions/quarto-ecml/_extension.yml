@@ -21,12 +21,14 @@ contributes:
     pdf:
       include-in-header: header.tex
       template-partials:
+        - partials/before-title.tex
         - partials/title.tex
         - partials/doc-class.tex
         - partials/before-body.tex
       indent: true
       block-headings: false
       csl: slncs.csl
+      nolinks: true
     html:
       css: styles.css
 
