@@ -99,7 +99,7 @@
 
 \renewcommand{\CSLLeftMargin}[1]{\hspace{0em}#1}
 \makeatletter
-\@ifpackageloaded{caption}{}{\usepackage{caption}}
+
 \AtBeginDocument{%
 \ifdefined\contentsname
   \renewcommand*\contentsname{Table of contents}
@@ -136,8 +136,8 @@
 \makeatletter
 \makeatother
 \makeatletter
-\@ifpackageloaded{caption}{}{\usepackage{caption}}
-\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+
+
 \makeatother
 
 \usepackage{bookmark}
@@ -149,12 +149,13 @@
   pdfauthor={André Lauren Benjamin; Calvin Cordozar Broadus Jr.; Antwan André Patton},
   pdfkeywords={First Keyword, Second Keyword, Another Keyword.},
   colorlinks=true,
-  linkcolor={blue},
+  linkcolor={black},
   filecolor={Maroon},
   citecolor={Blue},
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
+\hypersetup{nolinks=true}
 
 \title{Recent Advances in Underwater Basket Weaving Under the Extreme
 Pressure of the Mariana Trench}

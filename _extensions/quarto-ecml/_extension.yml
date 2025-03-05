@@ -3,27 +3,32 @@ author: pat-alt
 version: 0.0.1
 quarto-required: ">=1.6.0"
 contributes:
+  project:
+    project:
+      type: default
+    post-render: 
+      - remove_caption.lua
+    format: quarto-ecml-pdf
   formats:
     common:
       toc: false
-      filters:
-        - quarto-ecml.lua
       number-sections: true
       number-depth: 2
+      linkcolor: black
       crossref:
         fig-title: Fig.
         fig-prefix: Fig.
     pdf:
       include-in-header: header.tex
       template-partials:
+        - partials/before-title.tex
         - partials/title.tex
         - partials/doc-class.tex
         - partials/before-body.tex
       indent: true
       block-headings: false
-      # biblio-style: splncs04
-      # citeproc: false
       csl: slncs.csl
+      nolinks: true
     html:
       css: styles.css
 
