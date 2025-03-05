@@ -8,8 +8,6 @@ contributes:
       type: default
     post-render: 
       - remove_caption.lua
-    filters:
-      - cite.lua
     format: quarto-ecml-pdf
   formats:
     common:
@@ -32,6 +30,8 @@ contributes:
         - partials/doc-class.tex
         - partials/before-body.tex
         - partials/biblio.tex
+      filters:
+        - cite.lua
       indent: true
       block-headings: false
       # csl: slncs.csl
