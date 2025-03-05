@@ -18,6 +18,7 @@ contributes:
       crossref:
         fig-title: Fig.
         fig-prefix: Fig.
+      linestretch: 1.0
     pdf:
       include-in-header: header.tex
       template-partials:
