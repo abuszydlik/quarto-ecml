@@ -1,11 +1,14 @@
 ---
 title: Recent Advances in Underwater Basket Weaving Under the Extreme Pressure of the Mariana Trench
 title-running: Underwater Basket Weaving Under Extreme Pressure
+pdf-engine: pdflatex
 format:
   quarto-ecml-pdf:
     keep-tex: true
   quarto-ecml-html: default
 blind-review: false
+microtypeoptions:
+  - activate=false
 author:
   - name: André Lauren Benjamin
     affiliations:
