@@ -6,7 +6,6 @@ format:
     keep-tex: true
   quarto-ecml-html: default
 blind-review: false
-latex-clean: false
 author:
   - name: André Lauren Benjamin
     affiliations:
